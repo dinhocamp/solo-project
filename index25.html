@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <script src="main25.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script src="jquery.js"></script>
+  </head>
+
+  <body>
+    <div id ="esta"></div>
+  <div class="tooltip" id="alfa" > <h1>alfa romeo</h1> <img id="make1" src="https://catalogue.automobile.tn/marques/1.webp?t=1"></div>  <div class="tooltip" id="audi" > <h1>audi</h1> <img id="make2" src="https://catalogue.automobile.tn/marques/2.webp?t=1"> </div>
+  <div class="tooltips" id="bm" > <h1>bmw</h1> <img id="make3" src="https://catalogue.automobile.tn/marques/3.webp?t=1"> </div>
+  <div class="tooltips" id="merc" > <h1>mercedes benz</h1> <img id="make9" src="https://catalogue.automobile.tn/marques/9.webp?t=1"> </div>
+  
+  <div class="tooltips" id="2"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.abt-sportsline.com%2Ffileadmin%2F_processed_%2F9%2F5%2Fcsm_ABT_Audi_RS4_schwarz_ABT_tuning_2_heck_konfi_e854c38fc7.jpg&f=1&nofb=1" ></div>
+  <div class="tooltip" id="3"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstorage.googleapis.com%2Fgtspirit%2Fuploads%2F2018%2F05%2FBMW-M3-CS-18.jpg&f=1&nofb=1"></div>
+  <div class="tooltip" id="1"><img src="https://images.hgmsites.net/hug/2020-alfa-romeo-giulia-quadrifoglio_100746260_h.jpg"></div>
+  <div class="tooltip" id="4" ><img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fcdn.carbuzz.com%2Fgallery-images%2F1600%2F509000%2F400%2F509496.jpg&f=1&nofb=1"></div>
+  <div class="tooltip" id="5"><img src=""></div>
+  <div class="tooltip" id="6"><img src=></div>
+  <script> $("div").css("display","inline-block")
+  $(".tooltips").css("margin","10px")
+  $(".tooltips").css("padding","10px")
+  $("tooltips").css("display","inline-block")
+  $("body").css("background-color","green")
+  $("h1").css("justify-content","center")
+  $("h1").css("margin","10px")
+  $("h1").css("letter-spacing":"12px","font-size":"15px","position":"relative","left":"25px","top":"10px")
+  
+</script>
+<script> $(document).ready(function(){
+  $("#1").hide()
+   $("#2").hide()
+    $("#3").hide()
+     $("#4").hide()
+      $("#5").hide()
+  
+// $("#alfa").hover(function(){  })  
+$("#make1").dblclick(function(){$("#1").hide() 
+  $("#alfa").append($("#esta"))
+})
+$("#make1").click(function(){$("#1").append($("#alfa")) $("#1").show()})
+// $("#audi").hover(function(){})  
+$("#audi").dblclick(function(){$("#2").hide("slow")})
+$("#audi").click(function(){$("#audi").append ($("#2")) })
+// $("#bm").hover(function(){})  
+$("#bm").dblclick(function(){$("#3").hide("slow")})
+$("#bm").click(function(){$("#bm").append ($("#3"))})
+// $("#merc").hover(function(){})  
+$("#merc").dblclick(function(){$("#4").hide("slow")})
+$("#merc").click(function(){$("#merc").append ($("#4"))})
+// $("#vw").hover(function(){})  
+$("#vw").dblclick(function(){$("#5").hide("slow")})
+$("#vw").click(function(){$("#vw").append ($("#5"))})
+
+});</script>
+  </body>
+</html>
